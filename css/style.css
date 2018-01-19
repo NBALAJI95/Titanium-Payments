@@ -10,28 +10,13 @@ html{
     height: 2.5px;
 }
 
-body {
-    background: #151515;  /* fallback for old browsers */
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background:
-    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-    linear-gradient(#1d1d1d 25%, #222 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-  background-color: #131313;
-  background-size: 20px 20px;
-}
-
 form label {
     font-family: 'Tinos', serif;
 }
 
 .form {
     max-width: calc(100vw - 40px);
-    width: 500px;
+    width: 60%;
     height: auto;
     background: rgba(255, 255, 255, 1);
     border-radius: 8px;
@@ -64,9 +49,9 @@ form:before {
     margin: 18px 0;
     padding-bottom: 10px;
     width: 210px;
-    color: #1e439b;
+    color: #4B0082	;
     font-size: 22px;
-    border-bottom: 3px solid #ff5501;
+    border-bottom: 3px solid #a7adba;
     font-weight: 600;
     margin-bottom: 30px;
     font-family: 'Permanent Marker', cursive;
@@ -264,4 +249,8 @@ form br {
 span.imp {
     color: red;
     font-weight: bolder;
+}
+
+body {
+    background-color: black !important;
 }
