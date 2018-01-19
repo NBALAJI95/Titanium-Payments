@@ -7,170 +7,169 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="container">
-        <form class="form" autocomplete="off" method="POST" action="">
+<div class="container">
+    <form class="form" autocomplete="off" method="POST" action="">
 
-            <h2>User Profile</h2>
-            <div class="form-group">
-                <strong> <label for="name"> Full Name <span class="imp"> * </span> </label> </strong>
-                <div class="relative">
-                    <input class="form-control" id="name" type="text" autofocus=""
-                           title="Type your name here. Format: 'First-name Last-name'" autocomplete="off"
-                           placeholder="eg. John Smith" required>
-                    <i class="fa fa-user"></i>
+        <h2>User Profile</h2>
+        <div class="form-group">
+            <strong> <label for="name"> Full Name <span class="imp"> * </span> </label> </strong>
+            <div class="relative">
+                <input class="form-control" id="name" type="text" autofocus=""
+                       title="Type your name here. Format: 'First-name Last-name'" autocomplete="off"
+                       placeholder="eg. John Smith" required>
+                <i class="fa fa-user"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong> <label for="email"> Email address <span class="imp"> * </span> </label> </strong>
+            <div class="relative">
+                <input id="email" class="form-control" type="email" placeholder="eg. abc@mail.com"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                <i class="fa fa-envelope"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong> <label for="email"> Contact Number <span class="imp"> * </span> </label> </strong>
+            <div class="relative">
+                <input title="Type your 10-digit mobile number (US)..." type="tel"
+                       class="form-control input-medium bfh-phone" data-format="+1 (ddd) ddd-dddd" required>
+                <i class="fa fa-phone"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong> <label for="email"> Company Name <span class="imp"> * </span> </label> </strong>
+            <div class="relative">
+                <input class="form-control" type="text" title="Type your Company name here"
+                       placeholder="eg. Pied Piper" required>
+                <i class="fa fa-building"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong> <label for="provider"> Current Provider <span class="imp"> * </span> </label> </strong>
+            <div class="relative">
+                <input class="form-control" type="text" id="provider" title="Type your current provider"
+                       placeholder="eg. Titanium Payments" required>
+                <i class="fa fa-suitcase"></i>
+            </div>
+        </div>
+
+        <br/>
+
+        <h2> Business Info. </h2>
+        <strong><label for="exampleSelect1"> What type of business do you have? </label></strong>
+        <select class="form-control" id="exampleSelect1" style="margin-bottom: 1rem;">
+            <option> Donations & Personal Services </option>
+            <option> Service Providers </option>
+            <option> Professional Services </option>
+            <option> Groups / Organizations </option>
+            <option> Events / Entertainment </option>
+            <option> Retail Business </option>
+        </select>
+
+        <strong> <label for="mcc"> MCC Code <span class="imp"> * </span> </label> </strong>
+
+        <select class="form-control" id="mcc">
+            <option> Travel-4722 </option>
+            <option> Camps-7032 </option>
+            <option> Film Screenings-7832 </option>
+            <option> Band / Orchestra-7929 </option>
+            <option> Theater-7922 </option>
+            <option> Other Events / Entertainment-7999 </option>
+        </select>
+
+        <br/>
+
+        <strong> <label> How do you accept payments? <span class="imp"> * </span> </label> </strong>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="retail" name="retail">
+                    <label class="custom-control-label" for="retail"> Retail </label>
                 </div>
             </div>
 
-            <div class="form-group">
-                <strong> <label for="email"> Email address <span class="imp"> * </span> </label> </strong>
-                <div class="relative">
-                    <input id="email" class="form-control" type="email" placeholder="eg. abc@mail.com"
-                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
-                    <i class="fa fa-envelope"></i>
+            <div class="col-sm-6">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="e-commerce" name="e-commerce">
+                    <label class="custom-control-label" for="e-commerce"> e-commerce </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="moto" name="moto">
+                    <label class="custom-control-label" for="moto"> Moto </label>
                 </div>
             </div>
 
-            <div class="form-group">
-                <strong> <label for="email"> Contact Number <span class="imp"> * </span> </label> </strong>
-                <div class="relative">
-                    <input title="Type your 10-digit mobile number (US)..." type="tel"
-                           class="form-control input-medium bfh-phone" data-format="+1 (ddd) ddd-dddd" required>
-                    <i class="fa fa-phone"></i>
+            <div class="col-sm-6">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="other" name="other">
+                    <label class="custom-control-label" for="other"> Other </label>
                 </div>
             </div>
+        </div>
 
-            <div class="form-group">
-                <strong> <label for="email"> Company Name <span class="imp"> * </span> </label> </strong>
-                <div class="relative">
-                    <input class="form-control" type="text" title="Type your Company name here"
-                           placeholder="eg. Pied Piper" required>
-                    <i class="fa fa-building"></i>
-                </div>
-            </div>
+        <br/>
 
-            <div class="form-group">
-                <strong> <label for="provider"> Current Provider <span class="imp"> * </span> </label> </strong>
-                <div class="relative">
-                    <input class="form-control" type="text" id="provider" title="Type your current provider"
-                           placeholder="eg. Titanium Payments" required>
-                    <i class="fa fa-suitcase"></i>
-                </div>
-            </div>
+        <strong>
+            <label for="monthlyV">
+                What's your monthly volume <i> (per month) </i>? <span class="imp"> * </span>
+            </label>
+        </strong>
 
-            <br/>
-
-            <h2> Business Info. </h2>
-            <strong><label for="exampleSelect1"> What type of business do you have? </label></strong>
-            <select class="form-control" id="exampleSelect1" style="margin-bottom: 1rem;">
-                <option> Donations & Personal Services </option>
-                <option> Service Providers </option>
-                <option> Professional Services </option>
-                <option> Groups / Organizations </option>
-                <option> Events / Entertainment </option>
-                <option> Retail Business </option>
-            </select>
-
-            <strong> <label for="mcc"> MCC Code <span class="imp"> * </span> </label> </strong>
-
-            <select class="form-control" id="mcc">
-                <option> Travel-4722 </option>
-                <option> Camps-7032 </option>
-                <option> Film Screenings-7832 </option>
-                <option> Band / Orchestra-7929 </option>
-                <option> Theater-7922 </option>
-                <option> Other Events / Entertainment-7999 </option>
-            </select>
-
-            <br/>
-
-            <strong> <label> How do you accept payments? <span class="imp"> * </span> </label> </strong>
+        <div class="form-group" id="monthlyV">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="retail" name="retail">
-                        <label class="custom-control-label" for="retail"> Retail </label>
+                    <label for="VISA"> VISA / Master Card </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" min="0" id="VISA" placeholder="Amount (USD)">
                     </div>
                 </div>
 
                 <div class="col-sm-6">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="e-commerce" name="e-commerce">
-                        <label class="custom-control-label" for="e-commerce"> e-commerce </label>
+                    <label for="discover"> Discover </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" min="0" id="discover" placeholder="Amount (USD)">
                     </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="moto" name="moto">
-                        <label class="custom-control-label" for="moto"> Moto </label>
+                    <label for="AMEX"> Amex </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" min="0" id="AMEX" placeholder="Amount (USD)">
                     </div>
                 </div>
 
                 <div class="col-sm-6">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="other" name="other">
-                        <label class="custom-control-label" for="other"> Other </label>
+                    <label for="pinDebit"> Pin Debit </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" min="0" id="pinDebit" placeholder="Amount (USD)">
                     </div>
                 </div>
             </div>
-
-            <br/>
-
-            <strong>
-                <label for="monthlyV">
-                    What's your monthly volume <i> (per month) </i>? <span class="imp"> * </span>
-                </label>
-            </strong>
-
-            <div class="form-group" id="monthlyV">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <label for="VISA"> VISA / Master Card </label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
-                            </div>
-                            <input type="number" class="form-control" min="0" id="VISA" placeholder="Amount (USD)">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <label for="discover"> Discover </label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
-                            </div>
-                            <input type="number" class="form-control" min="0" id="discover" placeholder="Amount (USD)">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <label for="AMEX"> Amex </label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
-                            </div>
-                            <input type="number" class="form-control" min="0" id="AMEX" placeholder="Amount (USD)">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <label for="pinDebit"> Pin Debit </label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
-                            </div>
-                            <input type="number" class="form-control" min="0" id="pinDebit" placeholder="Amount (USD)">
-                        </div>
-                    </div>
-                </div>
 
             <div class="row">
                 <div class="col-sm-6 offset-sm-3">
@@ -225,20 +224,18 @@
                 </a>
             </div>
 
-        </form>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
-    <script src="js/bootstrap-formhelpers-phone.js"></script>
-    <script>
-        $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
-            $(this).val($(this).val().replace(/[^\d].+/, ""));
-            if ((event.which < 48 || event.which > 57)) {
-                event.preventDefault();
-            }
-        });
-    </script>
+    </form>
+</div>
+<script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+<script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+<script src="js/bootstrap-formhelpers-phone.js"></script>
+<script>
+    $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
+        $(this).val($(this).val().replace(/[^\d].+/, ""));
+        if ((event.which < 48 || event.which > 57)) {
+            event.preventDefault();
+        }
+    });
+</script>
 </body>
 </html>
