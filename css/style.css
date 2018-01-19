@@ -10,18 +10,22 @@ html{
     height: 2.5px;
 }
 
+body {
+    background-color: black !important;
+}
+
+
 form label {
     font-family: 'Tinos', serif;
 }
 
 .form {
     max-width: calc(100vw - 40px);
-    width: 60%;
     height: auto;
     background: rgba(255, 255, 255, 1);
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #fff;
-    margin: 3% auto;
+    margin: 0 auto;
     padding: 20px 30px;
     box-sizing: border-box;
     position: relative;
@@ -241,6 +245,12 @@ button:hover {
     }
 }
 
+@media only screen and (min-width: 1000px) {
+    .form {
+        width: 70%;
+    }
+}
+
 form br {
     display: block;
     margin: 2px 0;
@@ -249,8 +259,4 @@ form br {
 span.imp {
     color: red;
     font-weight: bolder;
-}
-
-body {
-    background-color: black !important;
 }
