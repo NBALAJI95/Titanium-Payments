@@ -251,6 +251,12 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .form {
+        width: 97%;
+    }
+}
+
 form br {
     display: block;
     margin: 2px 0;
