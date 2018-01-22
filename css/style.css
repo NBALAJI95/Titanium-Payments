@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron|Permanent+Marker');
 @import url('https://fonts.googleapis.com/css?family=Tinos');
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
-=======
->>>>>>> da5b215e6a6c4a037c5b3154b3636304f327c2cd
 
 html{
     height: 100%;
 }
 
-<<<<<<< HEAD
 form select, form div.section {
     margin-bottom: 1rem;
 }
@@ -19,8 +15,6 @@ form div.bottom {
     margin-bottom: 0.7rem;
 }
 
-=======
->>>>>>> da5b215e6a6c4a037c5b3154b3636304f327c2cd
 #space {
     height: 2.5px;
 }
@@ -34,13 +28,10 @@ form label {
     font-family: 'Tinos', serif;
 }
 
-<<<<<<< HEAD
 form input, form select {
     font-family: 'PT Serif', serif;
 }
 
-=======
->>>>>>> da5b215e6a6c4a037c5b3154b3636304f327c2cd
 .form {
     max-width: calc(100vw - 40px);
     height: auto;
